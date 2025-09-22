@@ -1,0 +1,151 @@
+.editor {
+    border-radius: 6px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #303030;
+    height: 100%;
+}
+
+.tiptap {
+    outline: none;
+    padding: 10px 30px;
+    height: 100%;
+    max-height: 260px;
+    overflow-y: scroll;
+}
+
+.toolbar {
+    display: flex;
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.toolbar button {
+    padding: 6px 15px;
+    cursor: pointer;
+    color: #dbd8d8;
+    border: 0.7px solid #303030;
+    background-color: #333333;
+    transition: all 0.5s;
+
+}
+
+.toolbar button:first-child {
+    border-top-left-radius: 5px;
+}
+
+.toolbar button:hover {
+    background: #454545;
+}
+
+.toolbar button.active {
+    background: #333;
+    color: white;
+}
+
+.ProseMirror {
+    min-height: 200px;
+    outline: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.ProseMirror blockquote {
+    border-left: 5px solid #333333;
+    margin: 10px 0;
+    padding-left: 12px;
+    color: #555;
+    font-style: italic;
+    background: #1a1a1a;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+.tiptap p {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.tiptap h2 {
+    font-size: 22px;
+    margin: 9px 0;
+}
+
+.tiptap h1 {
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+.tiptap ul {
+    margin-left: 20px;
+}
+
+.tiptap ol {
+    margin-left: 20px;
+}
+
+.toolbar .bold {
+    font-weight: 600;
+}
+
+.quoteIcon {
+    height: 10px;
+}
+
+@media (max-width: 500px) {
+    .toolbar {
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .toolbar button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .toolbar button:first-child {
+        border-top-left-radius: 4px;
+    }
+
+    .tiptap {
+        padding: 10px 15px;
+        max-height: 200px;
+    }
+
+    .tiptap p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .tiptap h1 {
+        font-size: 22px;
+        margin: 8px 0;
+    }
+
+    .tiptap h2 {
+        font-size: 18px;
+        margin: 6px 0;
+    }
+
+    .ProseMirror blockquote {
+        padding: 5px;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    .tiptap ul, .tiptap ol {
+        margin-left: 15px;
+    }
+
+    .editor {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,70 @@
+.containerClock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerClock .clock {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 999px;
+    padding: 20px;
+}
+
+.containerClock .clock p {
+    font-size: 3.5rem;
+}
+
+.containerClock .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnSecondary {
+    background: linear-gradient(to bottom, #1d1d1d, #0f0f0f);
+    color: #fff;
+    border: 0.7px solid #303030;
+}
+
+.btnPomo {
+    margin: 0;
+}
+
+.options {
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 0.7px solid #303030;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.options .btnOption {
+    cursor: pointer;
+    background-color: #141414;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.activeOption {
+    background-color: #262626 !important;
+}
+
+.options button:hover {
+    transform: none;
+}

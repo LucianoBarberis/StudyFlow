@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "SFPro";
+    src: url(/fonts/SF-Pro.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SFPro";
+    color: #E1E1E1;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+ width: 10px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #303030;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #141414;  /* creates padding around scroll thumb */
+}
+
+*::selection {
+  background-color: #303030;
+}
+
+.t_content p {
+    font-weight: 200;
+}
+
+button {
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(0.99);
+}
